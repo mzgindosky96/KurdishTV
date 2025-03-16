@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KURDISH TV</title>
     <style>
+        /* Previous CSS remains the same */
         * {
             margin: 0;
             padding: 0;
@@ -31,7 +32,7 @@
 
         .player-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             margin-bottom: 20px;
@@ -84,41 +85,42 @@
 
     <div class="container">
         <div class="player-container">
-            <iframe id="main-player" src="" allowfullscreen></iframe>
+            <iframe id="main-player" src="" allow="autoplay" allowfullscreen></iframe>
         </div>
 
         <div class="channel-list">
-            <button class="channel-btn active" data-src="https://www.rudaw.net/sorani/onair/tv/live">Rudaw TV</button>
-            <button class="channel-btn" data-src="https://nrttv.com/streamNRT.aspx">NRT TV</button>
-            <button class="channel-btn" data-src="https://kurdmax.tv/live-stream#google_vignette">Kurdmax TV</button>
-             <button class="channel-btn" data-src="https://kurdmax.tv/live-stream#google_vignette">Duhok TV</button>
-              <button class="channel-btn" data-src="https://www.waarmedia.com/live-streaming">WAAR TV</button>
-               <button class="channel-btn" data-src="https://kurdmax.tv/live-stream#google_vignette">DuhokSport TV</button>
+            <!-- Updated stream URLs (test with working sources) -->
+            <button class="channel-btn active" data-src="https://www.youtube.com/embed/ZxaRdBWL894?si=0iYLHquMUb07_8b-">Rudaw TV</button>
+            <button class="channel-btn" data-src=" ">NRT TV</button>
+            <button class="channel-btn" data-src="https://www.dailymotion.com/embed/video/x8j6qzp">Kurdmax TV</button>
+            <button class="channel-btn" data-src="https://www.youtube.com/embed/live_stream?channel=UCXQl6Nq8jAgMUf5K3HZlRXg">Duhok TV</button>
         </div>
     </div>
 
     <script>
-        // JavaScript code
+        // Updated JavaScript
         const player = document.getElementById('main-player');
         const channelBtns = document.querySelectorAll('.channel-btn');
 
-        // Function to change channel
-        function changeChannel(channelUrl) {
-            player.src = channelUrl;
-            
-            // Update active class
-            channelBtns.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
+        function changeChannel(channelUrl, clickedButton) {
+            try {
+                player.src = channelUrl;
+                channelBtns.forEach(btn => btn.classList.remove('active'));
+                clickedButton.classList.add('active');
+            } catch (error) {
+                console.error('Error changing channel:', error);
+                alert('Error loading channel. Please try another one.');
+            }
         }
 
         // Set default channel
-        const defaultChannel = document.querySelector('.channel-btn.active').dataset.src;
-        player.src = defaultChannel;
+        const defaultBtn = document.querySelector('.channel-btn.active');
+        changeChannel(defaultBtn.dataset.src, defaultBtn);
 
-        // Add event listeners to channel buttons
+        // Add event listeners
         channelBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                changeChannel(btn.dataset.src);
+                changeChannel(btn.dataset.src, btn);
             });
         });
     </script>
