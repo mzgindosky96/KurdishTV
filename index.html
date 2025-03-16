@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
         <meta name="google-adsense-account" content="ca-pub-3032189625676969">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>KURDISH TV</title>
+    <title>KURDISH TV</title>
     <style>
         /* Previous CSS remains the same */
         * {
@@ -115,3 +115,46 @@
 
 
 <button class="channel-btn" data-src="https://kurditv.com/embed/122/">Zarok TV</button>
+
+
+
+
+
+
+
+            
+<button class="channel-btn" data-src=" https://kurditv.com/embed/893/">Duhok TV</button>
+ 
+
+        </div>
+    </div>
+
+    <script>
+        // Updated JavaScript
+        const player = document.getElementById('main-player');
+        const channelBtns = document.querySelectorAll('.channel-btn');
+
+        function changeChannel(channelUrl, clickedButton) {
+            try {
+                player.src = channelUrl;
+                channelBtns.forEach(btn => btn.classList.remove('active'));
+                clickedButton.classList.add('active');
+            } catch (error) {
+                console.error('Error changing channel:', error);
+                alert('Error loading channel. Please try another one.');
+            }
+        }
+
+        // Set default channel
+        const defaultBtn = document.querySelector('.channel-btn.active');
+        changeChannel(defaultBtn.dataset.src, defaultBtn);
+
+        // Add event listeners
+        channelBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                changeChannel(btn.dataset.src, btn);
+            });
+        });
+    </script>
+</body>
+</html>
