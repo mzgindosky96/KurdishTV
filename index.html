@@ -6,8 +6,45 @@
     <meta name="google-adsense-account" content="ca-pub-3032189625676969">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KURDISH TV</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
     <style>
+        .center-text {
+            text-align: center;
+        }
+        
+        .title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+        
+        /* Alternative font option */
+        /*
+        .title {
+            font-family: 'Oswald', sans-serif;
+        }
+        */
+    </style>
+    <title>
+
+KURDISH TV</title>
+
+    <style>
+
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/rudawbold.ttf') format('ttf'),
+         url('fonts/rudawbold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
         /* Previous CSS remains the same */
         * {
             margin: 0;
@@ -79,13 +116,87 @@
                 grid-template-columns: 1fr;
             }
         }
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/rudawbold.ttf') format('ttf'),
+         url('fonts/rudawbold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
     </style>
 </head>
 <body>
     <header>
-        <h1>Kurdish Live TV</h1>
-    </header>
+        <h1>
+<style>
+  .center-text {
+    text-align: center;
+  }
+</style>
 
+<div class="center-text"> Kurdish Live TV</h1>
+    </header>
+<!-- Replace the existing marquee with this -->
+<style>
+        /* تعريف الخط */
+        @font-face {
+            font-family: 'rudawbold'; /* اسم تختاره للخط */
+            src: url('rudawbold.ttf') format('truetype'); /* المسار إلى ملف الخط */
+            font-weight: bold; /* تحديد إذا كان الخط عريضًا */
+            font-style: normal;
+        }
+
+        /* تطبيق الخط على النص العربي */
+        .custom-font {
+            font-family: 'rudawbold', sans-serif;
+            font-size: 18px;
+            direction: rtl;
+        }
+    </style>
+<div class="marquee-container">
+    <div class="marquee-content">
+         <p class="custom-font">
+بەخشێ راستە وخو یێ هە می تلە ڤزیونێن کوردی [کوردستان تیڤی وارتیڤی روداو ئاڤاتیڤی کوردماکس کوردماکس شو زاگروس تیڤی زاروک تیڤی و کە نالێن جە زیرە و العربیە و الحدث سکای نیوس] 
+      <p/>
+    </div>
+</div>
+
+<style>
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: #0066FF	; /* Optional background color */
+    padding-right: 100%; 
+    direction: left;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 55s linear infinite;
+    padding-left: 100%; /* Initial offset */
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%); /* Start position: left side */
+  }
+  100% {
+    transform: translateX(100%); /* End position: right side */
+  }
+
+}
+</style>
+
+
+
+
+<!-- Add this after the marquee -->
     <div class="container">
         <div class="player-container">
             <iframe id="main-player" src="" allow="autoplay" allowfullscreen></iframe>
