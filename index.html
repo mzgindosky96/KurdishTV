@@ -1,64 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3032189625676969"
-     crossorigin="anonymous"></script>
-    <script>
-(function(mlhcgk){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = mlhcgk || {};
-s.src = "\/\/quarrelsomebitter.com\/bwX\/V.spd\/G\/lY0YYbWOcX\/DePmq9_uqZoUilIkNPNT\/cKwmMxDRgSyiM\/D\/EXt\/NnzLA\/w-OQDeIWwuNVQg";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-  <meta name="6bab6e4ea321d29c17cf60d94b443b976ed74f49" content="6bab6e4ea321d29c17cf60d94b443b976ed74f49" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3032189625676969" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-3032189625676969">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Kurdistan TV | Live Stream</title>
+    
+    <!-- Fonts (only for text, no FA icons on channel buttons) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- Keep Font Awesome only for header/footer decoration, not used on channel logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.8/dist/hls.min.js"></script>
     
     <style>
-        .center-text {
-            text-align: center;
-        }
-        
-        .title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5em;
-            color: #333;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            margin: 20px 0;
-        }
-        
-        /* Alternative font option */
-        /*
-        .title {
-            font-family: 'Oswald', sans-serif;
-        }
-        */
-    </style>
-    <title>
-
-KURDISH TV</title>
-
-    <style>
-
-
-@font-face {
-    font-family: 'MyCustomFont';
-    src: url('fonts/rudawbold.ttf') format('ttf'),
-         url('fonts/rudawbold.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-        /* Previous CSS remains the same */
         * {
             margin: 0;
             padding: 0;
@@ -66,217 +21,489 @@ KURDISH TV</title>
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: white;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background: #06090f;
+            color: #f0f3fa;
+            line-height: 1.5;
         }
 
-        header {
-            background-color: #2a2a2a;
-            padding: 20px;
+        /* Header with Flag Logo */
+        .site-header {
+            background: rgba(8, 12, 18, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+            padding: 0.8rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        /* Logo with Kurdistan Flag */
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+        }
+        .flag-mini {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: #ffffff10;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+        }
+        .kurdistan-flag-svg {
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+        .logo-text-side {
+            line-height: 1.2;
+        }
+        .logo-title {
+            font-size: 1.7rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #FFFFFF, #FFD966);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .logo-sub {
+            font-size: 0.65rem;
+            font-weight: 500;
+            color: #FFD966;
+            letter-spacing: 1px;
+        }
+        .live-status {
+            background: rgba(0,0,0,0.5);
+            border-radius: 50px;
+            padding: 6px 18px;
+            font-size: 0.75rem;
+            border-left: 3px solid #FFD966;
+        }
+
+        /* Main Container */
+        .main-container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Video Player Container - relative for ticker overlay */
+        .player-wrapper {
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            background: #000;
+            box-shadow: 0 25px 40px -15px black;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        #videoPlayer {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            display: block;
+        }
+        .iframe-fallback {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+
+        /* TICKER OVERLAY ON VIDEO PLAYER */
+        .video-ticker-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255, 215, 0, 0.5);
+            padding: 8px 16px;
+            overflow: hidden;
+            white-space: nowrap;
+            z-index: 20;
+            pointer-events: none;
+        }
+        .ticker-scroll {
+            display: flex;
+            white-space: nowrap;
+            animation: tickerSlide 45s linear infinite;
+            width: fit-content;
+        }
+        .ticker-scroll span {
+            display: inline-flex;
+            align-items: center;
+            gap: 2rem;
+            padding-right: 2.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #FFE9B6;
+            text-shadow: 0 1px 2px black;
+        }
+        .ticker-scroll i {
+            color: #FFD966;
+            margin-right: 6px;
+        }
+        @keyframes tickerSlide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .player-wrapper:hover .video-ticker-overlay .ticker-scroll {
+            animation-play-state: paused;
+        }
+
+        /* Channel Grid - using PNG images for logos */
+        .channels-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        .channels-header h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .channel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 12px;
+        }
+        .channel-btn {
+            background: #121723;
+            border: 1px solid #262e3c;
+            color: #eef2ff;
+            padding: 10px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+            text-align: left;
+        }
+        /* PNG logo styling */
+        .channel-logo-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 12px;
+            object-fit: cover;
+            background: #1e293b;
+            flex-shrink: 0;
+            border: 1px solid rgba(255, 217, 102, 0.3);
+            transition: all 0.2s;
+        }
+        .channel-btn:hover .channel-logo-img {
+            transform: scale(1.05);
+            border-color: #FFD966;
+        }
+        .channel-btn.active {
+            background: linear-gradient(95deg, #FFD966, #e0b84d);
+            border-color: transparent;
+            color: #0a0c14;
+        }
+        .channel-btn.active .channel-logo-img {
+            border-color: #0a0c14;
+            box-shadow: 0 0 0 2px #FFD966;
+        }
+        .channel-name {
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Footer Copyright */
+        .footer-copyright {
+            margin-top: 3rem;
+            background: #070b11;
+            border-top: 1px solid #1e2532;
+            padding: 1.8rem 1rem;
             text-align: center;
         }
-
-        .container {
-            max-width: 1200px;
+        .footer-content {
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 20px;
+        }
+        .copyright-text {
+            font-size: 0.8rem;
+            color: #8f9bb3;
+            letter-spacing: 0.3px;
+        }
+        .copyright-text strong {
+            color: #FFD966;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 0.8rem;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #7e8aa2;
+            font-size: 0.7rem;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: #FFD966;
         }
 
-        .player-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        #main-player {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .channel-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .channel-btn {
-            background-color: #333;
-            border: none;
-            color: white;
-            padding: 15px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .channel-btn:hover {
-            background-color: #444;
-        }
-
-        .channel-btn.active {
-            background-color: #007bff;
-        }
-
-        @media (max-width: 768px) {
-            .channel-list {
-                grid-template-columns: 1fr;
+        @media (max-width: 640px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .channel-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .logo-title {
+                font-size: 1.3rem;
+            }
+            .video-ticker-overlay {
+                padding: 5px 12px;
+            }
+            .ticker-scroll span {
+                font-size: 0.7rem;
             }
         }
-
-@font-face {
-    font-family: 'MyCustomFont';
-    src: url('fonts/rudawbold.ttf') format('ttf'),
-         url('fonts/rudawbold.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
     </style>
 </head>
 <body>
-    <header>
-        <h1>
-<style>
-  .center-text {
-    text-align: center;
-  }
-</style>
 
-<div class="center-text"> Kurdish Live TV</h1>
-    </header>
-<!-- Replace the existing marquee with this -->
-<style>
-        /* تعريف الخط */
-        @font-face {
-            font-family: 'rudawbold'; /* اسم تختاره للخط */
-            src: url('rudawbold.ttf') format('truetype'); /* المسار إلى ملف الخط */
-            font-weight: bold; /* تحديد إذا كان الخط عريضًا */
-            font-style: normal;
-        }
-
-        /* تطبيق الخط على النص العربي */
-        .custom-font {
-            font-family: 'rudawbold', sans-serif;
-            font-size: 18px;
-            direction: rtl;
-        }
-    </style>
-<div class="marquee-container">
-    <div class="marquee-content">
-         <p class="custom-font">
-بەخشێ راستە وخو یێ هە می تلە ڤزیونێن کوردی [کوردستان تیڤی وارتیڤی روداو ئاڤاتیڤی کوردماکس کوردماکس شو زاگروس تیڤی زاروک تیڤی و کە نالێن جە زیرە و العربیە و الحدث سکای نیوس] 
-      <p/>
-    </div>
-</div>
-
-<style>
-.marquee-container {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    background: #0066FF	; /* Optional background color */
-    padding-right: 100%; 
-    direction: left;
-}
-
-.marquee-content {
-    display: inline-block;
-    animation: marquee 55s linear infinite;
-    padding-left: 100%; /* Initial offset */
-}
-
-.marquee-content:hover {
-    animation-play-state: paused;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(-100%); /* Start position: left side */
-  }
-  100% {
-    transform: translateX(100%); /* End position: right side */
-  }
-
-}
-</style>
-
-
-
-
-<!-- Add this after the marquee -->
-    <div class="container">
-        <div class="player-container">
-            <iframe id="main-player" src="" allow="autoplay" allowfullscreen></iframe>
+<header class="site-header">
+    <div class="header-container">
+        <!-- Logo with Kurdistan Flag -->
+        <div class="logo-wrapper">
+            <div class="flag-mini">
+                <div class="kurdistan-flag-svg">
+                    <svg viewBox="0 0 100 100" style="width:100%; height:100%;">
+                        <rect x="0" y="0" width="100" height="33.3" fill="#ED1C24"/>
+                        <rect x="0" y="33.3" width="100" height="33.3" fill="#FFFFFF"/>
+                        <rect x="0" y="66.6" width="100" height="33.4" fill="#009E49"/>
+                        <circle cx="50" cy="50" r="14" fill="#FDD017"/>
+                        <g transform="translate(50,50)" stroke="#FDD017" stroke-width="2.5" fill="none">
+                            <line x1="0" y1="-20" x2="0" y2="-26" />
+                            <line x1="14" y1="-14" x2="18" y2="-18" />
+                            <line x1="20" y1="0" x2="26" y2="0" />
+                            <line x1="14" y1="14" x2="18" y2="18" />
+                            <line x1="0" y1="20" x2="0" y2="26" />
+                            <line x1="-14" y1="14" x2="-18" y2="18" />
+                            <line x1="-20" y1="0" x2="-26" y2="0" />
+                            <line x1="-14" y1="-14" x2="-18" y2="-18" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="logo-text-side">
+                <div class="logo-title">KURDISH TV</div>
+                <div class="logo-sub"><i class="fas fa-satellite-dish"></i> Weşana Zindi </div>
+            </div>
         </div>
+        <div class="live-status">
+            <i class="fas fa-circle" style="color:#FFD966; font-size: 0.6rem;"></i> LIVE BROADCAST
+        </div>
+    </div>
+</header>
 
-        <div class="channel-list">
-            <!-- Updated stream URLs (test with working sources) -->
-               <button class="channel-btn active" data-src=" https://yallashoootx.com/live/bein3.php">BeinSport1 TV</button>
-             <button class="channel-btn active" data-src=" https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8 ">Zagros TV</button>
-          <button class="channel-btn" data-src="https://6476e46b58f91.streamlock.net/liveTrans/KurdmaxS0rani!/playlist.m3u8
- ">Kurdmax TV</button>
-
-            <button class="channel-btn active" data-src=     "https://6476e46b58f91.streamlock.net/liveTrans/SHOW2/playlist.m3u8
-">KurdmaxShow TV</button>
-            <button class="channel-btn active" data-src="https://live.rudaw.net/hls/rudaw-tv/master.m3u8">Rudaw TV</button>
-           <button class="channel-btn" data-src=" https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
- ">TRTKurdi TV</button>
-
-       <button class="channel-btn active" data-src="https://d1x82nydcxndze.cloudfront.net/live/index.m3u8" type="application/x-mpegURL">Kurdistan24</button>
-
-<button class="channel-btn" data-src=" https://5a3ed7a72ed4b.streamlock.net/live/SMIL:myStream.smil/chunklist_w1840895338_b1700000_sleng_t64MTA4MHA=.m3u8 ">Kurdistan TV</button>
-
-<button class="channel-btn" data-src="https://live.kwikmotion.com/waarmedialive/waarmedia.smil/playlist.m3u8">WAAR TV</button>
-
-<button class="channel-btn" data-src=" https://app-live.org/live/3268334b/index.m3u8  ">Amozhgari TV</button>
-
-<button class="channel-btn" data-src=" https://avamedia.live  ">AVA TV</button>
-
-<button class="channel-btn" data-src=" https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8 ">Zarok TV</button>
-<button class="channel-btn" data-src="https://stream.skynewsarabia.com/hls/sna.m3u8
- ">SkyNews TV</button>
- <button class="channel-btn" data-src="https://www.youtube.com/embed/bNyUyrR0PHo?si=Ag6L2S_9oPU4YJNQ ">Al Jazeerah </button>
-<button class="channel-btn" data-src=" https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
- ">Al-Hadath TV</button>
-
-            <button class="channel-btn" data-src=" https://onlineradiobox.com/iq/duhok/">Duhok Radio</button>
- 
-
+<main class="main-container">
+    <!-- Video Player with OVERLAY TICKER -->
+    <div class="player-wrapper" id="playerWrapper">
+        <div id="playerContainer">
+            <video id="videoPlayer" controls playsinline poster="https://placehold.co/1920x1080/0a0e17/FFD966?text=Kurdistan+TV"></video>
+        </div>
+        <div class="video-ticker-overlay">
+            <div class="ticker-scroll">
+                <span><i class="fas fa-broadcast-tower"></i> 🔥 بەخشێ راستە وخو یێ هە می تلە ڤزیونێن کوردی — کوردستان تیڤی · وارتیڤی · روداو · ئاڤاتیڤی · کوردماکس · زاگروس تیڤی · زاروک تیڤی · العربیە · الحدث · سکای نیوس</span>
+                <span><i class="fas fa-broadcast-tower"></i> 🔥 بەخشێ راستە وخو یێ هە می تلە ڤزیونێن کوردی — کوردستان تیڤی · وارتیڤی · روداو · ئاڤاتیڤی · کوردماکس · زاگروس تیڤی · زاروک تیڤی · العربیە · الحدث · سکای نیوس</span>
+            </div>
         </div>
     </div>
 
-    <script>
-        // Updated JavaScript
-        const player = document.getElementById('main-player');
-        const channelBtns = document.querySelectorAll('.channel-btn');
+    <!-- Channels with PNG logos (generated via ui-avatars API as PNG images) -->
+    <div class="channels-header">
+     
+        <span style="font-size:0.7rem; background:#121723; padding:4px 12px; border-radius:40px;"><i class="fas fa-sync-alt"></i> Click to watch</span>
+    </div>
+    <div class="channel-grid" id="channelGrid">
+        <!-- Each channel uses a PNG link (ui-avatars generates a clean PNG with channel initials) -->
+        <button class="channel-btn" data-src="https://yallashoootx.com/live/bein3.php" data-type="iframe"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfdw940POZ-14QH-o5P7d3inv4ZhAmccnaYbzGPAKsmIVRlQuTfxL6fWc&s" alt="logo"><span class="channel-name">BeinSport1</span></button>
+        <button class="channel-btn" data-src="https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiMDk2ahjXq3_Xrj_S1s9_znX6oZ-MMBttdRgQQ-8Tw&s=10" alt="logo"><span class="channel-name">Zagros TV</span></button>
+        <button class="channel-btn" data-src="https://6476e46b58f91.streamlock.net/liveTrans/KurdmaxS0rani!/playlist.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFaMEGGJ8FBb0E9ST-PJK0x8x8ONHRrP68kwcRE2yJ5w&s=10" alt="logo"><span class="channel-name">Kurdmax TV</span></button>
+        <button class="channel-btn" data-src="https://6476e46b58f91.streamlock.net/liveTrans/SHOW2/playlist.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXhDn9H85hIGoRzHjUl02s6EGptgtJXUbmIonOFLhfw&s=10" alt="logo"><span class="channel-name">KurdmaxShow</span></button>
+        <button class="channel-btn" data-src="https://live.rudaw.net/hls/rudaw-tv/master.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZP0DPSOVTES-brgWQ6g0d87-LAbk62RBmoCdtkpshA&s=10" alt="logo"><span class="channel-name">Rudaw TV</span></button>
+        <button class="channel-btn" data-src="https://tv-trtkurdi.medya.trt.com.tr/master.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YLfBuDDNCXSEHzlajVJJ-wxEU0OTI_aHM42GcMviCg&s=10" alt="logo"><span class="channel-name">TRT Kurdi</span></button>
+        <button class="channel-btn" data-src="https://d1x82nydcxndze.cloudfront.net/live/index.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3_sy1t4FJa_uBZj7pQ11co_OKtOP9gmWOgtPxWyoeQ&s=10" alt="logo"><span class="channel-name">Kurdistan24</span></button>
+        <button class="channel-btn" data-src="https://5a3ed7a72ed4b.streamlock.net/live/SMIL:myStream.smil/chunklist_w1840895338_b1700000_sleng_t64MTA4MHA=.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGbrehje37DwHXbI137sdwgTAumKnRV3aXCiOZY3E7w&s=10" alt="logo"><span class="channel-name">Kurdistan TV</span></button>
+        <button class="channel-btn" data-src="https://live.kwikmotion.com/waarmedialive/waarmedia.smil/playlist.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUsHmye3_A1HMoJTWrGYUD-bzy-E9Nt6Lw_zyCM9iug&s=10" alt="logo"><span class="channel-name">WAAR TV</span></button>
+        <button class="channel-btn" data-src="https://app-live.org/live/3268334b/index.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNn4ZzlznqioyEQtX5Eypag1CXNPKfFdA8L-BjK7_AkA&s" alt="logo"><span class="channel-name">Amozhgari TV</span></button>
+        <button class="channel-btn" data-src="https://avamedia.live" data-type="web"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScQLQqwqQzEaBIjoluYtHykt3teq2muQyTUNC9YinacA&s=10" alt="logo"><span class="channel-name">AVA TV</span></button>
+        <button class="channel-btn" data-src="https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROkuYWucZ9yco4Et3ci7ycg5UHkHRCovksG4WewZeiuw&s=10" alt="logo"><span class="channel-name">Zarok TV</span></button>
+        <button class="channel-btn" data-src="https://stream.skynewsarabia.com/hls/sna.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPpM-Y_e928nbDZAhun8A5C16JMsiaG9JRTAy98asx3Q&s=10" alt="logo"><span class="channel-name">SkyNews Arab</span></button>
+        <button class="channel-btn" data-src="https://www.youtube.com/embed/bNyUyrR0PHo?si=Ag6L2S_9oPU4YJNQ" data-type="youtube"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKwizziG8g1KY301K0VtrJgd5vOypG0ML5kcoMtLTfsg&s=10" alt="logo"><span class="channel-name">Al Jazeera</span></button>
+        <button class="channel-btn" data-src="https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8" data-type="hls"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY32rzYuhOKqWqwTBYPJZ4JU927LaahZaHw9liPSP_BQ&s=10" alt="logo"><span class="channel-name">Al-Hadath</span></button>
+        <button class="channel-btn" data-src="https://onlineradiobox.com/iq/duhok/" data-type="web"><img class="channel-logo-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuHH8OR1Riq52IJgv0FMLl4gvGgZ-RviZJ4O0IqgvG9Q&s=10" alt="logo"><span class="channel-name">Duhok Radio</span></button>
+    </div>
+</main>
 
-        function changeChannel(channelUrl, clickedButton) {
-            try {
-                player.src = channelUrl;
-                channelBtns.forEach(btn => btn.classList.remove('active'));
-                clickedButton.classList.add('active');
-            } catch (error) {
-                console.error('Error changing channel:', error);
-                alert('Error loading channel. Please try another one.');
+<!-- Footer -->
+<footer class="footer-copyright">
+    <div class="footer-content">
+        <div class="copyright-text">
+            &copy; <span id="currentYear"></span> <strong>Kurdistan TV Network</strong> — All rights reserved. Broadcasting excellence for Kurdish & global audiences.
+        </div>
+        <div class="footer-links">
+            <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fas fa-shield-alt"></i> DMCA</a>
+            <a href="#"><i class="fas fa-copyright"></i> Terms</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Professional Player + HLS handling
+    const videoElement = document.getElementById('videoPlayer');
+    const playerContainer = document.getElementById('playerContainer');
+    let hlsInstance = null;
+    let currentIframe = null;
+
+    function destroyPlayer() {
+        if (hlsInstance) {
+            hlsInstance.destroy();
+            hlsInstance = null;
+        }
+        if (currentIframe) {
+            currentIframe.remove();
+            currentIframe = null;
+        }
+        videoElement.style.display = 'block';
+        videoElement.pause();
+        videoElement.removeAttribute('src');
+        videoElement.load();
+        const existingIframe = playerContainer.querySelector('.iframe-fallback');
+        if (existingIframe) existingIframe.remove();
+        const errorDiv = playerContainer.querySelector('.player-error');
+        if (errorDiv) errorDiv.remove();
+    }
+
+    function playHls(url) {
+        return new Promise((resolve, reject) => {
+            if (Hls.isSupported()) {
+                if (hlsInstance) hlsInstance.destroy();
+                const hls = new Hls({ liveSyncDurationCount: 2, maxBufferLength: 30 });
+                hls.attachMedia(videoElement);
+                hls.on(Hls.Events.MEDIA_ATTACHED, () => {
+                    hls.loadSource(url);
+                    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                        videoElement.play().catch(e => console.warn("autoplay:", e));
+                        resolve();
+                    });
+                    hls.on(Hls.Events.ERROR, (event, data) => {
+                        if (data.fatal) reject(new Error("HLS stream error"));
+                    });
+                });
+                hlsInstance = hls;
+            } else if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
+                videoElement.src = url;
+                videoElement.addEventListener('loadedmetadata', () => videoElement.play().catch(e=>console.warn(e)), { once: true });
+                resolve();
+            } else {
+                reject(new Error("HLS not supported"));
             }
-        }
-
-        // Set default channel
-        const defaultBtn = document.querySelector('.channel-btn.active');
-        changeChannel(defaultBtn.dataset.src, defaultBtn);
-
-        // Add event listeners
-        channelBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                changeChannel(btn.dataset.src, btn);
-            });
         });
-    </script>
+    }
+
+    function loadIframe(url, isYoutube = false) {
+        destroyPlayer();
+        videoElement.style.display = 'none';
+        const iframe = document.createElement('iframe');
+        iframe.className = 'iframe-fallback';
+        iframe.src = url;
+        iframe.allow = "autoplay; fullscreen; accelerometer; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+        iframe.style.width = '100%';
+        iframe.style.aspectRatio = '16 / 9';
+        iframe.style.border = 'none';
+        playerContainer.appendChild(iframe);
+        currentIframe = iframe;
+    }
+
+    async function changeChannel(url, type, buttonElement) {
+        document.querySelectorAll('.channel-btn').forEach(btn => btn.classList.remove('active'));
+        buttonElement.classList.add('active');
+        try {
+            destroyPlayer();
+            videoElement.style.display = 'block';
+            if (type === 'hls' || (url.includes('.m3u8') && type !== 'youtube')) {
+                await playHls(url);
+            } else if (type === 'youtube' || url.includes('youtube.com/embed')) {
+                loadIframe(url, true);
+            } else if (type === 'iframe' || url.includes('yallashoootx') || url.includes('.php')) {
+                loadIframe(url);
+            } else {
+                loadIframe(url);
+            }
+        } catch (err) {
+            console.error("Channel error:", err);
+            destroyPlayer();
+            videoElement.style.display = 'none';
+            const errorBox = document.createElement('div');
+            errorBox.className = 'player-error';
+            errorBox.style.cssText = "background:#11161f; color:#FFD966; display:flex; align-items:center; justify-content:center; gap:12px; aspect-ratio:16/9; text-align:center; font-size:0.9rem;";
+            errorBox.innerHTML = '<i class="fas fa-exclamation-triangle" style="font-size:2rem;"></i> Cannot load stream. Please try another channel.';
+            playerContainer.appendChild(errorBox);
+            setTimeout(() => errorBox.remove(), 4000);
+        }
+    }
+
+    function detectStreamType(url, explicitType) {
+        if (explicitType) return explicitType;
+        if (url.includes('youtube.com/embed')) return 'youtube';
+        if (url.includes('.m3u8')) return 'hls';
+        if (url.includes('yallashoootx') || url.includes('streamlock')) return 'hls';
+        return 'web';
+    }
+
+    const allButtons = document.querySelectorAll('.channel-btn');
+    allButtons.forEach(btn => {
+        const src = btn.getAttribute('data-src');
+        let type = btn.getAttribute('data-type');
+        if (!type) type = detectStreamType(src, null);
+        btn.setAttribute('data-type', type);
+        btn.addEventListener('click', () => changeChannel(src, type, btn));
+    });
+
+    if (allButtons.length) {
+        const defaultBtn = allButtons[0];
+        defaultBtn.classList.add('active');
+        changeChannel(defaultBtn.dataset.src, defaultBtn.dataset.type, defaultBtn).catch(e => console.warn(e));
+    }
+
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+</script>
 </body>
 </html>
